@@ -20,15 +20,15 @@
           <ul>
             <li>
               <label for="user-name">Your name</label>
-              <input type="text" name="user-name" id="username" />
+              <input type="text" name="user-name" id="username" placeholder="Zeynep Düzgün" required/>
             </li>
             <li>
               <label for="user-email">Your e-mail address</label>
-              <input type="email" name="user-email" id="useremail" />
+              <input type="email" name="user-email" id="useremail" placeholder="example@domain.com" required/>
             </li>
             <li>
               <label for="user-password">Your password</label>
-              <input type="password" name="user-password" id="userpassword" />
+              <input type="password" name="user-password" id="userpassword" required minlength="7"  />
             </li>
           </ul>
         </section>
@@ -45,11 +45,12 @@
                 min="1"
                 max="100"
                 step="1"
+                required
               />
             </li>
             <li>
               <label for="user-birthdate">Your birthdate</label>
-              <input type="date" name="user-birthdate" id="userbirthdate" />
+              <input type="date" name="user-birthdate" id="userbirthdate" required min="1921-01-01" max="2023-01-01"/>
             </li>
             <li>
               <label for="favorite-color">Your favorite color?</label>
@@ -81,6 +82,7 @@
                 name="verification"
                 id="verify-text-message"
                 value="sms"
+                required
               />
               <label for="verify-text-message">via text message (SMS)</label>
             </li>
@@ -90,6 +92,7 @@
                 name="verification"
                 id="verify-phone"
                 value="phone"
+                required
               />
               <label for="verify-phone">Via a phone call</label>
             </li>
@@ -99,6 +102,7 @@
                 name="verification"
                 id="verify-email"
                 value="email"
+                required
               />
               <label for="verify-email">Via an email</label>
             </li>
